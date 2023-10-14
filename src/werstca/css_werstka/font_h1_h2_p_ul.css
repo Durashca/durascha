@@ -1,0 +1,15 @@
+h1 {
+    color: blue;
+}
+h2 {
+    color: green;
+}
+b {
+    font-weight: bold;
+}
+body {
+    width: 400px;
+}
+h1, h2 {
+    text-align: center;
+}
