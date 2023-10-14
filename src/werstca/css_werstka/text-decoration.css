@@ -1,0 +1,14 @@
+ h6 {
+     text-decoration:  underline;
+ }
+ h5 {
+     text-decoration: overline;
+     color: red;
+ }
+ h4 {
+     text-decoration: line-through;
+ }
+ a {
+     text-decoration: none;
+     color: red;
+ }
