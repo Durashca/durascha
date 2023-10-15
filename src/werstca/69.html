@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>69</title>
+  <style>
+    /*1*/
+    h2.zzz {
+      color: red;
+    }
+    /*2*/
+    h2 .zzz {
+      color: magenta;
+    }
+    /*3*/
+    .rot.gold {
+      color: orange;
+    }
+    /*6*/
+    .bbb .zzz.xxx {
+      color: chocolate;
+    }
+    /*7*/
+    .bbb.zzz .ccc {
+      color: gold;
+    }
+    /*8*/
+    .bbb, .xxx, .zzz{
+      color: aqua;
+    }
+    /*9*/
+    #elem.bbb {
+      color: blue;
+    }
+    /*10*/
+    #elem1 .bbb {
+      color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+<!--#1-->
+<h2 class="zzz"> красный текст </h2>
+<!--#2-->
+<h2><span class="zzz">розовый текст</span></h2>
+<!--#3-->
+<p class="rot gold">текст покрашен в оранжевый</p>
+<!--#6-->
+<div class="bbb">
+  <p class="zzz xxx">чоколатный текст</p>
+</div>
+<!--#7-->
+<div class="bbb zzz">
+  <p class="ccc">желтый</p>
+</div>
+<!--#8-->
+<p class="bbb zzz xxx">берюзовый</p>
+<!--#9-->
+<p id="elem" class="bbb">синий</p>
+<!--#10-->
+<div id="elem1">
+  <p class="bbb">текст сиреневый</p>
+</div>
+
+</body>
+</html>
