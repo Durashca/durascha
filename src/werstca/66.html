@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>66</title>
+    <style>
+        /*№1*/
+       #elem h2 {
+           color: red;
+       }
+
+        /*№2*/
+       #elem1 li.text, p.text {
+           color: aqua;
+       }
+       /*№3*/
+       #elem2 p.text {
+           color: blue;
+       }
+       #elem3 li.text {
+           color: blueviolet;
+       }
+    </style>
+</head>
+<body>
+<!--№1-->
+<!--Напишите селектор, который выберет все h2, находящиеся в
+элементе с id, равным elem. Проверьте ваш селектор на
+следующем коде:-->
+<div id="elem">
+    <h2>Choose</h2>
+    <p>---</p>
+
+    <h2>Choose</h2>
+    <p>---</p>
+</div>
+<h2>Do not +++</h2>
+<p>---</p>
+
+<!--№2-->
+<!--Напишите селектор, который выберет все элементы с классом text,
+находящиеся в элементе с id, равным elem. Проверьте ваш селектор
+на следующем коде:-->
+<div id="elem1">
+    <p class="text">+++s</p>
+    <p class="text">+++</p>
+    <ul>
+        <li class="text">+++</li>
+        <li class="text">+++</li>
+        <li class="text">+++</li>
+        <li>---</li>
+        <li>---</li>
+    </ul>
+</div>
+<p class="text">---</p>
+
+<!--№3-->
+<!--Напишите селектор, который выберет все абзацы с классом text,
+находящиеся в элементе с id, равным elem. Проверьте ваш селектор на
+следующем коде:-->
+<div id="elem2">
+    <p class="text">+++</p>
+    <p class="text">+++</p>
+
+    <ul>
+        <li class="text">---</li>
+        <li class="text">---</li>
+        <li class="text">---</li>
+        <li>---</li>
+        <li>---</li>
+    </ul>
+</div>
+<p class="text">---</p>
+
+<!--№4-->
+<!--Напишите селектор, который выберет все li с классом text, находящиеся
+в элементе с id, равным elem. Проверьте ваш селектор на следующем коде:-->
+<div id="elem3">
+    <p class="text">---</p>
+    <p class="text">---</p>
+    <ul>
+        <li class="text">+++</li>
+        <li class="text">+++</li>
+        <li class="text">+++ь</li>
+        <li>---</li>
+        <li>---</li>
+    </ul>
+</div>
+<p class="text">---</p>
+
+</body>
+</html>
