@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        /*#1*/
+        /*
+        a.zzz {
+            color: red;
+        }
+        a.zzz:hover {
+            text-decoration: none;
+        }
+        a.bbb {
+            color: orange;
+        }
+        a:hover.bbb { !* так тоже будет работать *!
+            text-decoration: none;
+        }
+        */
+
+        /*#2*/
+        /*
+        #block a.zzz {
+            color: red;
+        }
+        #block a.zzz:hover {
+            text-decoration: none;
+        }
+        */
+
+        /*#3*/
+        /*.block a.zzz {
+            color: red;
+        }
+        .block a.zzz:hover {
+            text-decoration: none;
+        }*/
+
+    </style>
+</head>
+<body>
+<!--Расскажите, что выбирает селектор в приведенном ниже коде.
+Затем напишите HTML код, подходящий под этот селектор.
+Вот код с селектором:
+
+a.zzz {
+color: red;
+}
+a.zzz:hover {
+text-decoration: none;
+}
+он выбирает тег а которые имеет класс zzz-->
+
+<!--#1-->
+<!--
+<a href="#" class="zzz">title</a>
+<a href="#" class="bbb">title</a>
+-->
+
+<!--#2-->
+<!--Расскажите, что выбирает селектор в приведенном ниже коде.
+Затем напишите HTML код, подходящий под этот селектор.
+ Вот код с селектором:
+
+#block a.zzz {
+color: red;
+}
+#block a.zzz:hover {
+text-decoration: none;
+}
+выберется тег a который имеет класс zzz и id block, задает начальный цвеи:
+red, а при наведении убирает нижнее подчеркивания-->
+
+<!--
+<div id="block">
+    <a href="#"  class="zzz" >title</a>
+</div>
+-->
+
+<!--#3-->
+<!--Расскажите, что выбирает селектор в приведенном ниже коде.
+ Затем напишите HTML код, подходящий под этот селектор.
+ Вот код с селектором:
+
+.block a.zzz {
+color: red;
+}
+.block a.zzz:hover {
+text-decoration: none;
+}
+выберется тег a который принадлежит классу zzz и находится внутри класса block, первоначально
+красный цвет red и при наедении убирается нижнее подчеркивание-->
+<!--<p class="block"><a href="#" class="zzz">title</a></p>-->
+
+</body>
+</html>
