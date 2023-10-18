@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>87</title>
+    <style>
+
+
+        /* селектор:nth-child(число | odd | even | выражение) {}
+     odd	Нечетные элементы; even	Четные элементы.*/
+
+     /*#1*/
+    .aaa li:first-child { /* мы возьмем первый элемент li */
+      color: red;
+    }
+
+      /*#2*/
+
+    .aaa li:last-child{
+        color: aqua;
+    }
+
+    /*#4*/
+    .bbb li:nth-child(3){ /* выберет все четные*/
+        color: gold;
+
+    }
+
+    /*#5*/
+     .ccc li:nth-child(odd){ /* выберет все не четные*/
+         color: gold;
+    }
+
+     .ccc li:nth-child(even){ /* выберет все четные */
+         color: chartreuse;
+     }
+
+     /*#6*/
+     .ddd li:nth-child(3n){ /* выберет все элемнты через 2 */
+         color: magenta;
+     }
+
+      /*№7*/
+     .fff li:nth-last-child(1) { /* выберет первые елемент с конца */
+         color: chocolate;
+     }
+
+     /*#8*/
+     .ggg li:only-child {
+         color: red;
+     }
+
+     /*#9*/
+     .hhh li:empty { /*не убирает пустые теги */
+         border: 1px solid blue;
+         list-style-type: circle;
+         color: blue;
+         width: 100px;
+         /*
+         display: none; такая команда уберет пустые теги
+         действует только в :empty
+         */
+     }
+    </style>
+</head>
+<body>
+#1, #2
+<ul class="aaa">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+</ul>
+
+#4
+<ul class="bbb">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+
+</ul>
+
+#5
+<ul class="ccc">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+
+#6
+<ul class="ddd">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+
+#7
+<ul class="fff">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+
+#8
+<ul class="ggg">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<ul class="ggg"><li>1</li></ul>
+
+#9
+<ul class="hhh">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>
