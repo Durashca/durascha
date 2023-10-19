@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>89</title>
+  <style>
+
+    /*
+    Псевдокласс not задает отрицание,
+    к примеру, p:not(.last) означает выбрать все абзацы,
+    у которых нет класса last. Вложенные not не работают.
+    */
+    /*#1*/
+    .a li:not(.elem) {
+      color: red;
+    }
+
+    /*#2*/
+    .bb li:not(:first-child) {
+      color: magenta;
+    }
+
+    /*#3*/
+    .ccc li:not(:first-child):not(:last-child){
+      color: gold;
+    }
+    /*#3*/
+  </style>
+</head>
+<body>
+
+#1
+<ul class="a">
+  <li>1</li>
+  <li class="elem">2</li>
+  <li>3</li>
+  <li>4</li>
+  <li class="elem">5</li>
+  <li>6</li>
+  <li>7</li>
+  <li class="elem">8</li>
+  <li>9</li>
+</ul>
+
+#2
+<ul class="bb">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+</ul>
+
+#3
+<ul class="ccc">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+</ul>
+
+</body>
+</html>
