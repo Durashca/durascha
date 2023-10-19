@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>88</title>
+  <style>
+
+    /*#1*/
+    .aaa li:first-of-type { /*возьмет первый тег p (остальные брать не будет*/
+      color: red;
+    }
+    .aaa li:last-of-type { /*возьмет последний тег p (остальные брать не будет*/
+      color: chartreuse;
+    }
+
+    /*#2*/
+    .bbb li:nth-of-type(2){ /*возьмет заданный  тег считая вверх снизу */
+      color: chocolate;
+    }
+
+    .bbb li:nth-last-child(2){ /*возьмет тег считая снизу вверх */
+      color: gold;
+    }
+
+    /*#3*/
+     p:only-of-type.ccc {
+      color: magenta;
+    }
+  </style>
+</head>
+<body>
+#1
+<ol class="aaa">
+  <li>text</li>
+  <li>text</li>
+  <li>text</li>
+  <li>text</li>
+  <li>text</li>
+  <li>text</li>
+</ol>
+
+#2
+<ol class="bbb">
+  <li>text</li>
+  <li>text</li>
+  <li>text</li>
+  <li>text</li>
+  <li>text</li>
+  <li>text</li>
+</ol>
+
+#3
+<div><p class="ccc">text</p></div>
+<div>
+<p class="ccc">text</p>
+<p class="ccc">text</p>
+<p class="ccc">text</p>
+</div>
+</body>
+</html>
