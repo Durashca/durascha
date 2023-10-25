@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>176</title>
+    <style>
+/*#1*/
+        .parent1 {
+            width: 400px;
+            height: 400px;
+            margin: 0 300px;
+            background: rebeccapurple;
+            border-radius: 20px;
+
+            position: relative;
+
+
+        }
+
+       .parent1 .elem1 {
+            width: 100px;
+            height: 100px;
+            background: #4DEE99;
+            border: 2px solid #ff4213;
+            border-radius: 20px;
+
+            position: absolute;
+            top: 100px;
+            left: 90px;
+        }
+
+/*#2*/
+        .traffic_light {
+            position: relative;
+            width: 300px;
+            height: 700px;
+            margin: 20px 300px;
+            background: #6B6967;
+            border-radius: 20px;
+            border:1px  #6B6967;
+        }
+
+       .traffic_light .red {
+           width: 150px;
+           height:150px;
+           background: #ff4213;
+           border: 2px solid #6B6967;
+           border-radius: 50%;
+
+
+           position: absolute;
+           top: 60px;
+           left: 75px;
+       }
+       .red .gold {
+           width: 150px;
+           height:150px;
+           background: gold;
+           border: 2px solid #6B6967;
+           border-radius: 50%;
+
+           position: absolute;
+           top: 200px;
+       }
+       .gold .green {
+           width: 150px;
+           height:150px;
+           background: green;
+           border: 2px solid #6B6967;
+           border-radius: 50%;
+
+           position: absolute;
+           top: 200px;
+
+       }
+    </style>
+</head>
+<body>
+
+<div class="parent1">
+    <div class="elem1"></div>
+</div>
+
+<br>
+
+<div class="traffic_light">
+    <div class="red">
+        <div class="gold">
+            <div class="green"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
