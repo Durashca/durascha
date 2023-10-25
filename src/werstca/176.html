@@ -25,10 +25,21 @@
             border-radius: 20px;
 
             position: absolute;
-            top: 100px;
-            left: 90px;
+            top: 80px;
+            left: 80px;
         }
 
+       .parent1 .elem2 {
+           width: 100px;
+           height: 100px;
+           background: #4DEE99;
+           border: 2px solid #ff4213;
+           border-radius: 20px;
+
+           position: absolute;
+           bottom: 80px;
+           right: 80px;
+       }
 /*#2*/
         .traffic_light {
             position: relative;
@@ -71,23 +82,97 @@
 
            position: absolute;
            top: 200px;
-
        }
+         /*#3*/
+/*
+создаем фон смайлика
+*/
+       .smile {
+           width: 500px;
+           height: 500px;
+           background: gold;
+           border-radius: 50%;
+
+           position: relative;
+       }
+/*
+создаем шар который вскоре сатнет нашей улыбкой
+*/
+       .smile .mouth_front {
+           width: 180px;
+           height: 180px;
+           background: black;
+           border-radius: 50%;
+
+           position: absolute;
+           bottom: 70px;
+           right: 160px;
+       }
+/*
+создаем шар такого же цвета
+как и фон и закрываем наш круг
+*/
+.mouth_front .mouth_rear {
+    width: 180px;
+    height: 180px;
+    background: gold;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: 70px;
+    right: 1px;
+}
+
+.smile .eye_first {
+    width: 100px;
+    height: 100px;
+    background: black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 70px;
+    right: 100px;
+
+}
+
+.smile .eye_last {
+    width: 100px;
+    height: 100px;
+    background: black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 70px;
+    left: 100px;
+
+}
+
     </style>
 </head>
 <body>
-
+<!--#1-->
 <div class="parent1">
     <div class="elem1"></div>
+    <div class="elem2"></div>
 </div>
 
 <br>
 
+<!--#2-->
 <div class="traffic_light">
     <div class="red">
         <div class="gold">
             <div class="green"></div>
         </div>
+    </div>
+</div>
+
+<!--#3-->
+<div class="smile">
+    <div class="eye_first"></div>
+    <div class="eye_last"></div>
+    <div class="mouth_front">
+        <div class="mouth_rear"></div>
     </div>
 </div>
 </body>
