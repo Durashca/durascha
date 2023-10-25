@@ -98,7 +98,7 @@
 /*
 создаем шар который вскоре сатнет нашей улыбкой
 */
-       .smile .mouth_front {
+            .mouth_front {
            width: 180px;
            height: 180px;
            background: black;
@@ -112,7 +112,7 @@
 создаем шар такого же цвета
 как и фон и закрываем наш круг
 */
-.mouth_front .mouth_rear {
+       .mouth_rear {
     width: 180px;
     height: 180px;
     background: gold;
@@ -123,7 +123,7 @@
     right: 1px;
 }
 
-.smile .eye_first {
+      .eye_first {
     width: 100px;
     height: 100px;
     background: black;
@@ -135,7 +135,7 @@
 
 }
 
-.smile .eye_last {
+       .eye_last {
     width: 100px;
     height: 100px;
     background: black;
@@ -146,6 +146,17 @@
     left: 100px;
 
 }
+     .nose {
+         width: 100px;
+         height: 50px;
+         background: black;
+         border-radius: 50%;
+
+         position: absolute;
+         top: 180px;
+         left: 195px;
+
+    }
 
     </style>
 </head>
@@ -171,9 +182,11 @@
 <div class="smile">
     <div class="eye_first"></div>
     <div class="eye_last"></div>
+
     <div class="mouth_front">
         <div class="mouth_rear"></div>
     </div>
+    <div class="nose"></div>
 </div>
 </body>
 </html>
