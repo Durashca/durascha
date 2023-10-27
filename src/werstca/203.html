@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>203</title>
+  <style>
+    .parent {
+      border: 5px solid red;
+      width: 900px;
+      height: 300px;
+      margin: 20px auto;
+    }
+    .child {
+      width: 100px;
+      height: 50px;
+      float: left;
+      border: 3px solid green;
+      /*
+      padding: 15px 30px;
+      */
+      display: flex;
+      flex-direction: row;
+    }
+    .clearfix {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+<div class="parent">
+  <div class="child">1</div>
+  <div class="child">2</div>
+  <div class="child">3</div>
+  <div class="child">4</div>
+  <div class="child">5</div>
+  <div class="clearfix"></div>
+</div>
+</body>
+</html>
