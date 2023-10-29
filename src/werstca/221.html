@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>221</title>
+  <style>
+    #parent1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 2px solid red;
+      height: 350px;
+      padding: 10px;
+    }
+
+    #parent2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      border: 2px solid red;
+      height: 350px;
+      padding: 10px;
+    }
+
+    #parent3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      border: 2px solid red;
+      height: 350px;
+      padding: 10px;
+    }
+
+    /* #parent > */ div {
+      border: 3px solid rebeccapurple;
+      height: 50px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+<p>#1</p>
+<div id="parent1">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<p>#2</p>
+<div id="parent2">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<p>#3</p>
+<div id="parent3">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+</body>
+</html>
