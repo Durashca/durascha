@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>223</title>
+  <style>
+
+    /*#1*/
+    #parent1 {
+      border: 3px solid red;
+      height: 350px;
+      display: grid;
+      grid-template-columns: 100px 1fr 1fr;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+     div {
+                     border: 3px solid rebeccapurple;
+                     margin: 10px;
+                   }
+
+    /*#2*/
+    #parent2 {
+      border: 3px solid red;
+      height: 350px;
+      display: grid;
+      grid-template-columns: 100px 1fr 1.5fr 100px;
+      padding: 20px;
+      margin: 0 auto;
+
+    }
+  </style>
+</head>
+<body>
+<p>#1</p>
+<div id="parent1">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<p>#2</p>
+<div id="parent2">
+  <div>1) 100px</div>
+  <div>2) 1fr</div>
+  <div>3) 1.5fr</div>
+  <div>4) 100px</div>
+  <div>5)</div>
+  <div>6)</div>
+  <div>7)</div>
+  <div>8) </div>
+</div>
+</body>
+</html>
