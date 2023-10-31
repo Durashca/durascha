@@ -1,0 +1,51 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>238</title>
+    <style>
+        .parent {
+            border: 3px solid rebeccapurple;
+            padding: 10px;
+            display: grid;
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+            gap: 10px;
+            margin: 0 auto;
+
+            width: 500px;
+            height: 450px;
+        }
+
+        .parent > div {
+            border: 3px solid red;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</div>
+
+<div style="gap: 10px 5%" class="parent">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</div>
+
+</body>
+</html>
