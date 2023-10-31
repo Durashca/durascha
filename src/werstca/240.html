@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>240</title>
+    <style>
+        .menu1 {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .menu1 a {
+            font: 15px Arial;
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            background: #16A177;
+            border: 3px solid #16A177;
+            margin-right:  10px;
+        }
+        .menu1 a:hover, .menu1 a.active {
+            border: 3px solid #16A177;
+            background: white;
+            color: #16A177;
+        }
+
+        .menu2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 400px;
+        }
+
+        .menu2 a {
+            font: 15px Arial;
+            text-decoration: none;
+            border: 3px solid #16A177;
+            background: #16A177;
+            color: white;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .menu2 a:hover, .menu2 a.active {
+            border: 3px solid #16A177;
+            color: #16A177;
+            background: white;
+        }
+
+        .menu3 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 25px;
+        }
+
+        .menu3 a {
+            border: 3px solid #16A177;
+            background: #16A177;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+        }
+        .menu3 a.active, .menu3 a:hover, .menu3 a.VanishingLinks:hover {
+            border: 3px solid #16A177;
+            color: white;
+            background: green;
+        }
+
+        .menu3 a.VanishingLinks {
+            background: white;
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+<p>#1</p>
+<div class="menu1">
+    <a href="#">home</a>
+    <a href="#" class="active">blog</a>
+    <a href="#">photos</a>
+    <a href="#">about us</a>
+    <a href="#">contacts</a>
+</div>
+
+<p>#2</p>
+<div class="menu2">
+    <a href="#">home</a>
+    <a href="#" class="active">blog</a>
+    <a href="#">photos</a>
+    <a href="#">about us</a>
+    <a href="#">contacts</a>
+</div>
+
+<p>#3</p>
+<div class="menu3">
+    <a href="#">home</a>
+    <a href="#" class="active">blog</a>
+    <a href="#">photos</a>
+    <a href="#" class="VanishingLinks">about us</a>
+    <a href="#" class="VanishingLinks">contacts</a>
+</div>
+</body>
+</html>
