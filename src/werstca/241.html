@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>241</title>
+    <style>
+        .wrapper {
+            border: 3px solid #6B6967;
+            padding: 0;
+            margin: 50px auto;
+            width: 700px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+            background: #6B6967;
+            margin-bottom: 20px;
+
+        }
+
+        .menu a {
+            border: 3px solid #6B6967;
+            margin: 0;
+            text-decoration: none;
+            color: white;
+            font: bold 15px Arial;
+            padding: 10px;
+        }
+
+       .wrapper .menu a:hover, .menu a.active {
+            color: #6B6967;
+            border: 3px solid white;
+            background: white;
+
+        }
+
+        .context {
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .context a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .context a:hover {
+            text-decoration: underline;
+            color: #4DEE99;
+
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="menu">
+        <a href="#">home</a>
+        <a href="#">blog</a>
+        <a href="#">photos</a>
+        <a href="#" class="active">about us</a>
+        <a href="#">contacts</a>
+    </div>
+    <div class="context">
+        <h1>Proin tristique lorem</h1>
+        <p>Lorem ipsum dolor <a href="#">sit amet</a>, consectetur adipiscing elit. Cras sollicitudin ultrices dictum.
+            Nullam non diam
+            vestibulum, interdum nibh quis, sollicitudin sem. Vivamus sit amet sagittis massa. Cras aliquet lacus at
+            interdum blandit. Quisque quis tellus nunc. Cras at nisi laoreet, suscipit nibh quis, pellentesque diam.</p>
+        <p>Cras ut nunc metus. Nullam id faucibus ante.<a href="#"> Proin tristique lorem </a>tristique dolor porttitor, eget adipiscing
+            leo gravida. Proin erat erat, laoreet sit amet tincidunt ac, iaculis nec libero. In placerat odio ac dapibus
+            faucibus. Praesent ut est in ligula facilisis congue eget ac ante. Phasellus at felis vitae est molestie
+            ultricies.</p>
+    </div>
+</div>
+</body>
+</html>
