@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>project</title>
+    <style>
+
+        body {
+            background: #8f892b;
+        }
+
+        body, p, a {
+            margin: 10px;
+            padding: 0;
+            text-decoration: none;
+            color: black;
+            font: 16px Arial;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            margin: 30px auto;
+            display: flex; /* Добавляем flex */
+        }
+
+        .side_menu {
+            width: 350px;
+            /* Убираем display: flex; */
+        }
+
+        .side_menu ul {
+            /*
+            list-style-type: none;
+            */
+            padding-left: 0;
+        }
+
+        .side_menu li {
+            margin-bottom: 10px;
+        }
+
+
+        .side_menu a:hover {
+            color: #f5f5c8;
+        }
+
+        .top_menu {
+            display: flex;
+            width: 800px;
+            height: 80px;
+            background: gray;
+            margin: 0 auto;
+            border-radius: 0 0 10px 10px;
+            position: relative;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        nav.top_menu a {
+            color: rgba(218, 144, 26, 0.95);
+            margin: 0 10px;
+            padding: 10px;
+        }
+
+        .top_menu img {
+            float: left;
+            margin: 10px;
+            width: 250px;
+            padding-right: 70px;
+        }
+
+        .top_menu .entrance {
+            padding: 5px 10px;
+            border: 2px solid white;
+            border-radius: 30px;
+            margin-left: 50px;
+        }
+
+        .top_menu a:hover {
+            color: #FFFE22;
+        }
+
+
+
+
+
+     .block {
+            display: flex;
+            width: 600px;
+            height: 100%;
+            border: 2px solid red;
+            padding: 10px;
+            margin-left: 30px;
+        }
+     .block img {
+         width: 100px;
+         height: 100px;
+         float: left;
+         margin: 10px;
+     }
+
+     .first_block, .second_block, .third_block {
+         border: 2px solid rebeccapurple;
+     }
+
+        /*
+         .first_block, .second_block, .third_block {
+             background: green;
+             border-radius: 15px;
+             height: auto;
+             margin: 5px 0;
+             padding: 4% 7%;
+             display: block;
+             text-align: justify;
+
+             align-items: start;
+             justify-content: end;
+
+
+         }
+
+         .first_block a {
+             margin-bottom: 10px;
+             color: white;
+         }
+
+         .first_block img {
+             width: 200px;
+             height: 200px;
+             margin-top: 20px;
+             margin-bottom: 50px;
+             margin-left: 0;
+             padding: 15px;
+             float: left;
+         }
+
+         p {
+             margin: 0;
+             color: white;
+         }
+
+         .second_block, .third_block {
+             position: relative;
+             top: 40px;
+             border: 2px solid red;
+             margin: 10px 0;
+
+         }
+
+ */
+    </style>
+</head>
+<body>
+<nav class="top_menu">
+    <img src="/src/images/img_1.png" alt="img">
+    <a href="#">Помощник</a>
+    <a href="#">Обсуждения</a>
+    <a href="#">Книги</a>
+    <a class="entrance" href="#">Войти</a>
+</nav>
+<div class="wrapper">
+    <div class="side_menu">
+        <ul>
+            <li><a href="#">Аркады / Физические</a></li>
+            <li><a href="#">Арканоид / Скроллер</a></li>
+            <li><a href="#">Гонки / Вождение</a></li>
+            <li><a href="#">Детские / Обучающие</a></li>
+            <li><a href="#">Карточные / Пасьянсы</a></li>
+            <li><a href="#">Квесты / Новеллы</a></li>
+            <li><a href="#">Головоломка / Логика</a></li>
+            <li><a href="#">Маджонг / Ассорти</a></li>
+            <li><a href="#">Настольные / Паззлы</a></li>
+            <li><a href="#">Платформер / Рогалик</a></li>
+            <li><a href="#">Поиск / Я ищу</a></li>
+            <li><a href="#">Приключения / Сюжет</a></li>
+            <li><a href="#">РПГ / Слэшеры / jRPG</a></li>
+            <li><a href="#">Симулятор / Сэндбокс</a></li>
+            <li><a href="#">Спорт / Файтинг</a></li>
+            <li><a href="#">Стратегии / Башенки</a></li>
+            <li><a href="#">Тайкуны / Менеджеры</a></li>
+            <li><a href="#">Три в ряд / Зуманоиды</a></li>
+            <li><a href="#">Хорроры / Выживание</a></li>
+            <li><a href="#">Экшн / Шутеры</a></li>
+            <li><a href="#">Эротические / Разное</a></li>
+            <li><a href="#">Книги / Журналы</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="block">
+            <div class="first_block">
+                <a href="#">Железнодорожный Магнат 2 + Второе Столетие / Railroad Tycoon 2 + The
+                    Second Century</a>
+                <p></p>
+                <img src="/src/images/WladMaket.png" alt="паровоз">
+                Вас доставят из Нью-Йорка в Северную Африку. Вас переместят из 1804 года в год 2000. Вас превратят из
+                бедного разнорабочего в могущественного мультимиллионера. Из нормального уравновешенного человека вы
+                превратитесь в одержимого фаната поездов. Это настоящая железнодорожная игра, а не просто стратегия
+                с поездами. Если вы хотите прокатиться на машине, корабле или самолете — поищите другую игру. Это
+                игра о поездах для людей, которые любят поезда. Всё в этой игре настроено на создание достоверного
+                вида и создания неподдельного ощущения железных дорог. Включает в себя Railroad Tycoon II и
+                дополнение The Second Century.
+
+                <div class="second_block">
+                    <a href="#">Metal Gear Solid 3: Snake Eater. Master Collection Version</a>
+                    <p></p>
+                    <img src="/src/images/WladMaket%20(1).png" alt="зеленый">
+                    Действие игры разворачивается в дремучем лесу. В этой части у игрока появляются новые стелс-приёмы.
+                    Так, Snake должен искать снаряжение, использовать камуфляж и краску для лица, чтобы сливаться с
+                    окружением. В игру также добавлены новые элементы экшена — стало возможно ловить лесных обитателей
+                    для пропитания и поддержания сил, и появился режим ближнего рукопашного боя (CQC), позволяющий
+                    сражаться с ближайшими противниками, применяя приемы боевых искусств. Кроме того, добавлены
+                    эксклюзивные цифровые материалы — Screenplay Book и Master Book с подробной историей и описанием
+                    персонажей игры Metal Gear Solid 3: Snake Eater.
+                </div>
+                <div class="third_block">
+                    <a href="#">Alan Wake 2. Deluxe Edition (Русская версия)</a></div>
+                <p></p>
+                <img src="/src/images/WladMaket%20(2).png" alt="человек">
+                Городок Брайт-Фоллс, укрывшийся среди гор и лесов на северо-западе тихоокеанского побережья, потрясла
+                серия ритуальных убийств. Для расследования этих жутких преступлений в город прибывает Сага Андерсон —
+                опытный агент ФБР, за плечами которой немало дел, считавшихся нераскрываемыми. Однако, когда Андерсон
+                находит страницы из романа ужасов, который начинает оживать у неё на глазах, её дело быстро превращается
+                в кошмар наяву. Алан Уэйк — писатель, заточённый в кошмаре за гранью нашего мира, пишет мрачный роман в
+                попытке изменить реальность вокруг себя и сбежать из темницы. Спасаясь от ужаса преследующей его тьмы,
+                Уэйк старается сохранить рассудок и победить дьявола на его поле.
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
