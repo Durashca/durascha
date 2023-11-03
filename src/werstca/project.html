@@ -6,7 +6,8 @@
     <style>
 
         body {
-            background: #8f892b;
+            background: #afb996;
+            max-height: 1000px;
         }
 
         body, p, a {
@@ -25,19 +26,14 @@
         }
 
         .side_menu {
-            width: 350px;
+            width: 325px;
             /* Убираем display: flex; */
         }
 
-        .side_menu ul {
-            /*
-            list-style-type: none;
-            */
-            padding-left: 0;
-        }
-
         .side_menu li {
-            margin-bottom: 10px;
+            margin: 12px 0 12px 12px;
+            font: 18px bolder;
+
         }
 
 
@@ -47,12 +43,13 @@
 
         .top_menu {
             display: flex;
-            width: 800px;
+            width: 900px;
             height: 80px;
             background: gray;
             margin: 0 auto;
             border-radius: 0 0 10px 10px;
             position: relative;
+            top: -10px;
             flex-direction: row;
             align-items: center;
         }
@@ -78,8 +75,9 @@
         }
 
         .top_menu a:hover {
-            color: #FFFE22;
+            color: #b87518;
         }
+
 
 
         .block {
@@ -88,23 +86,25 @@
             width: 900px;
             height: 100%;
             padding: 10px;
-            margin-left: 10px;
-            border-radius: 20px;
+            margin-left: 0;
         }
 
         .block img {
             width: 190px;
             height: 190px;
             float: left;
-            margin: 10px;
+            margin: 0 10px 10px;
         }
 
         .first_block, .second_block, .third_block {
-            /* border: 2px solid rebeccapurple;*/
-            margin: 60px 0;
+            margin: 40px 0 10px 0;
             height: 360px;
-            background: #739915;
+            width: 990px;
+            background: #f5f5c8;
             padding: 10px;
+            border-radius: 15px;
+            font-size: 15px;
+
         }
 
         span {
@@ -132,9 +132,25 @@
 
         }
 
-        .min_block p {
+        .min_block p     {
             margin-left: 16px;
         }
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .footer {
+            font-size: .9em;
+            padding: 15px 0;
+            width: 100%;
+            height: 40px;
+            background: rgba(90,146,29,0.89);
+            text-align: center;
+            position:relative;
+            bottom: -10px;
+        }
+
     </style>
 </head>
 <body>
@@ -179,7 +195,7 @@
             <div class="first_block">
                 <h2><a href="#"><b>Железнодорожный Магнат 2 + Второе Столетие / Railroad Tycoon 2 + The
                     Second Century</b></a></h2>
-                <p></p>
+
                 <img src="/src/images/WladMaket.png" alt="паровоз">
                 <div>
                     Вас доставят из Нью-Йорка в Северную Африку. Вас переместят из 1804 года в год 2000. Вас превратят
@@ -199,7 +215,7 @@
             <div class="second_block">
                 <div>
                     <h2><a href="#"><b>Metal Gear Solid 3: Snake Eater. Master Collection Version</b></a></h2>
-                    <p></p>
+
                     <img src="/src/images/WladMaket%20(1).png" alt="зеленый">
                     <div>
                         Действие игры разворачивается в дремучем лесу. В этой части у игрока появляются новые
@@ -222,7 +238,7 @@
             <div class="third_block">
                 <div>
                     <h2><a href="#"><b>Alan Wake 2. Deluxe Edition (Русская версия)</b></a></h2>
-                    <p></p>
+
                     <img src="/src/images/WladMaket%20(2).png" alt="человек">
                     <div>
                         Городок Брайт-Фоллс, укрывшийся среди гор и лесов на северо-западе тихоокеанского побережья,
@@ -241,7 +257,6 @@
                         <div class="min_block">
                             <a href="#" class="there">Подробнее</a>
                             <p>Жанр:<a href="#"> Приключения / Сюжет</a><a>Хорроры / Выживание</a></p>
-
                         </div>
                     </div>
                 </div>
@@ -249,6 +264,8 @@
         </section>
     </main>
 </div>
-<footer></footer>
+<footer class="footer">
+    Copyright IgroZoom © 2008-2022. All Rights Reserved.
+</footer>
 </body>
 </html>
