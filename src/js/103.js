@@ -8,7 +8,7 @@ let key = 'x';
 console.log(obj[key]);
 //3
 obj = {x: 1, y: 2, z: 3};
-let sum = obj['x'] + obj['y'] + obj['x'];
+let sum = obj['x'] + obj['y'] + obj['z'];
 
 console.log(sum);
 //4
