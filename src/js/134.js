@@ -1,4 +1,4 @@
-let age = 19;
+let age = 17;
 let adult = true;
 if (age <= 18) {
     adult = false;
