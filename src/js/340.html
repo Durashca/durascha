@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>340</title>
+</head>
+<body>
+<!--1-->
+<div id="block">
+    <p>1</p>
+    <p>2</p>
+</div>
+
+<!--2-->
+<div class="block">
+    <p>1</p>
+    <p>2</p>
+</div>
+
+<!--3-->
+<p class="www">text</p>
+<p class="www">text</p>
+
+<script>
+    let elem = document.querySelector('#block p')
+    console.log(elem)
+
+    let elem2 = document.querySelector('.block p')
+    console.log(elem2)
+
+    let elem3 = document.querySelector('p.www')
+    console.log(elem3)
+</script>
+</body>
+</html>
