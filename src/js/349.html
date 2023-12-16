@@ -8,9 +8,18 @@
 //1
 <p class="elem">!!!</p>
 <input id="elem" type="email">
+<br>
 
 //2
+<br>
 <input id="elem2" type="email">
+<br>
+
+//3
+<br>
+<h3 class="elem">abc</h3>
+<a class="elem" href="#">//http:/</a>
+<button class="elem">☺</button>
 <script>
   //1
   let p = document.querySelector('p.elem')
@@ -23,6 +32,15 @@
   input2 = document.querySelector('#elem2')
   input2.type = 'submit'
   console.log(input2.type)
+
+  //3
+  let h3 = document.querySelector('h3.elem')
+  let a = document.querySelector('a.elem')
+  let button = document.querySelector('button.elem')
+
+  button.addEventListener('click', function () {
+      h3.textContent = a.textContent
+  })
 </script>
 </body>
 </html>
