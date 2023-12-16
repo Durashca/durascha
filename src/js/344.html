@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>344</title>
+</head>
+<body>
+<p id="elem1">text</p>
+<p id="elem2">text</p>
+<p id="elem3">text</p>
+<p id="elem4">text</p>
+<p id="elem5">text</p>
+
+<script>
+  function func() {
+    console.log('message');
+  }
+
+  let button1 = document.querySelector('#elem1')
+  let button2 = document.querySelector('#elem2')
+  let button3 = document.querySelector('#elem3')
+  let button4 = document.querySelector('#elem4')
+  let button5 = document.querySelector('#elem5')
+
+  button1.addEventListener('click', func)
+  button2.addEventListener('click', func)
+  button3.addEventListener('click', func)
+  button4.addEventListener('click', func)
+  button5.addEventListener('click', func)
+
+</script>
+</body>
+</html>
