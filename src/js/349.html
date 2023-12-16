@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>349</title>
+</head>
+<body>
+//1
+<p class="elem">!!!</p>
+<input id="elem" type="email">
+
+//2
+<input id="elem2" type="email">
+<script>
+  //1
+  let p = document.querySelector('p.elem')
+  let input = document.querySelector('#elem')
+  input.addEventListener('click',function () {
+  p.textContent = input.type
+  })
+
+  //2
+  input2 = document.querySelector('#elem2')
+  input2.type = 'submit'
+  console.log(input2.type)
+</script>
+</body>
+</html>
