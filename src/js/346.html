@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>346</title>
+</head>
+<body>
+<p id="elem">text</p>
+
+<script>
+  let button = document.querySelector('#elem')
+
+  button.addEventListener('click', func1)
+  button.addEventListener('click', func2)
+  button.addEventListener('click', func3)
+
+  function func1() {
+    console.log('1');
+  }
+
+  function func2() {
+    console.log('2');
+  }
+
+  function func3() {
+    console.log('3');
+  }
+</script>
+</body>
+</html>
