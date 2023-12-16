@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>348</title>
+</head>
+<body>
+//1
+<h1 class="h1">teeeeeeext</h1>
+<button class="button1">нажми</button>
+
+//2
+<h2 class="h2">text</h2>
+<button class="aaa">test</button>
+
+<script>
+  //1
+  let button = document.querySelector('button.button1')
+  let h1 = document.querySelector('h1.h1')
+
+  button.addEventListener('click', function () {
+    console.log(h1.innerHTML)
+  })
+
+  //2
+  let button2 = document.querySelector('button.aaa')
+  let h2 = document.querySelector('h2.h2')
+  
+  button2.addEventListener('click', function () {
+    h2.innerHTML = '<i>!!!</i>'
+    console.log(h2.innerHTML)
+  })
+</script>
+</body>
+</html>
