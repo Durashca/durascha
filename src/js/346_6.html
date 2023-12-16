@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>346_6</title>
+</head>
+<body>
+<p class="elem1">text</p>
+<p class="elem2">text</p>
+<p class='elem3'>text</p>
+<p class='elem4'>text</p>
+<script>
+    let button1 = document.querySelector('p .elem1')
+    let button2 = document.querySelector('p .elem2')
+    let button3 = document.querySelector('p .elem3')
+    let button4 = document.querySelector('p .elem4')
+
+    button1.addEventListener('dblclick', function () {
+        console.log('1!!!')
+    });
+    button2.addEventListener('click', function (){
+        console.log('2!!!')
+    });
+    button3.addEventListener('mouseout' ,function () {
+        console.log('3!!!')
+    })
+    button4.addEventListener('mouseover', function () {
+        console.log('4!!!')
+    } )
+
+</script>
+</body>
+</html>
