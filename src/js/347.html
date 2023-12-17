@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>347</title>
+</head>
+<body>
+//1
+<h1 class="elem">text</h1>
+
+//2
+<p class="elem2">text</p>
+<button>нажми</button>
+
+//3
+<p class="num1">1</p>
+<p class="num2">2</p>
+<p class="sum">!!!</p>
+<button class="button3">нажми</button>
+<script>
+    //1
+    let h1 = document.querySelector('h1.elem');
+    console.log(h1.textContent);
+
+    //2
+    let button  = document.querySelector('button')
+    button.addEventListener('click', function (){
+        let p = document.querySelector('p.elem2')
+        p.textContent = '!!!'
+    })
+    //3
+    let num1 = document.querySelector('p.num1')
+    let num2 = document.querySelector('p.num2')
+    let sum = document.querySelector('p.sum')
+    let res = Number(num1.textContent) + Number(num2.textContent)
+    console.log('res')
+    let button3 = document.querySelector('button  .button3')
+
+    button3.addEventListener('click', function () {
+        sum.textContent = res
+    })
+
+</script>
+</body>
+</html>
