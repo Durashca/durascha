@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>354</title>
+</head>
+<body>
+<p>//1</p>
+<input id="elem" value="test">
+
+<p>//2</p>
+<button id = 'elem2'>1</button>
+<script>
+  //1
+  let input = document.querySelector('#elem')
+
+  input.addEventListener('focus', function (){
+    this.value = '1'
+  })
+  input.addEventListener('blur', function () {
+    this.value = '2'
+  })
+
+  //2
+  let button = document.querySelector('#elem2')
+
+  button.addEventListener('click', function () {
+    this.textContent  = Number(this.textContent) + 1
+  })
+</script>
+</body>
+</html>
