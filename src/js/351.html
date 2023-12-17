@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>351</title>
+</head>
+<body>
+<p>//1</p>
+<div id="elem" class="content no-gap"></div>
+<button id="elem1">test</button>
+
+<p>//2</p>
+<div id="elem2"></div>
+<button id="elem3">test</button>
+
+<p>//3</p>
+<div id="elem4" class="aaa bbb ccc"></div>
+<button id="elem5">test</button>
+<script>
+  //1
+  let div = document.querySelector('#elem')
+  let button = document.querySelector('#elem1')
+  button.addEventListener('click', function () {
+    console.log(div.className)
+  })
+  
+  //2
+  let div2 = document.querySelector('#elem2')
+  let button2 = document.querySelector('#elem3')
+  button2.addEventListener('click', function () {
+    div2.className = 'red'
+    console.log(div2.className)
+  })
+
+  //3
+  let div3 = document.querySelector('#elem4')
+  let button3 = document.querySelector('#elem5')
+  button3.addEventListener('click', function () {
+    let res = []
+    res = div3.className.split(' ')
+
+    console.log(res)
+  })
+</script>
+</body>
+</html>
