@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>350</title>
+</head>
+<body>
+<p>#1</p>
+<input id="elem1" value="test">
+<p>#2</p>
+<input id="elem2" value="test">
+<p>#3</p>
+<input id="elem3" value="test">
+
+<script>
+    let input = document.querySelector('#elem1')
+    input.addEventListener('focus', function () {
+        input.value = '1'
+    })
+    input.addEventListener('blur', function (){
+        input.value = '2'
+    })
+
+    //2
+    let input2 = document.querySelector('#elem2')
+    input2.addEventListener('blur', function () {
+        input2.value **= 2
+    })
+
+    //3
+    let input3 = document.querySelector('#elem3')
+    input3.addEventListener('focus', function () {
+          input3.value = ''
+    })
+</script>
+</body>
+</html>
