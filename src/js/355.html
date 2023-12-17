@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>355</title>
+</head>
+<body>
+<h1 class="od">test1</h1>
+<h2 class="od">test2</h2>
+<h3 class="od">test3</h3>
+<h4 class="od">test4</h4>
+<h5 class="od">test5</h5>
+
+<input class="od2" value="test1">
+<input class="od3" value="test2">
+<input class="od4" value="test3">
+
+
+<script>
+  let h1 = document.querySelector('h1.od')
+  let h2 = document.querySelector('h2.od')
+  let h3 = document.querySelector('h3.od')
+  let h4 = document.querySelector('h4.od')
+  let h5 = document.querySelector('h5.od')
+
+  h1.addEventListener('click', func)
+  h2.addEventListener('click', func)
+  h3.addEventListener('click', func)
+  h4.addEventListener('click', func)
+  h5.addEventListener('click', func)
+
+  function func (){
+    console.log(this.textContent)
+  }
+
+  let inp1 = document.querySelector('input.od2')
+  let inp2 = document.querySelector('input.od3')
+  let inp3 = document.querySelector('input.od4')
+
+  inp1.addEventListener('blur', func2)
+  inp2.addEventListener('blur', func2)
+  inp3.addEventListener('blur', func2)
+
+  function func2() {
+   this.value **=  2
+  }
+</script>
+</body>
+</html>
