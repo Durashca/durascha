@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>357</title>
+</head>
+<body>
+<!--//1-->
+<input class="input" value="">
+<input class="input" value="">
+<input class="input" value="">
+<!--//2-->
+<p class="elem">1</p>
+<p class="elem">2</p>
+<p class="elem">3</p>
+<p class="elem">4</p>
+<script>
+    //1
+    let inputs = document.querySelectorAll('.input')
+    for (input of inputs ){
+        input.addEventListener('blur', function func() {
+            this.value = Number(this.value) + 1;
+        })
+    }
+    //2
+    let p = document.querySelectorAll('.elem')
+    console.log(p)
+    for (elem of p){
+        elem.addEventListener('click', function () {
+            this.textContent = Number(this.textContent) ** 2;
+        })
+    }
+</script>
+</body>
+</html>
