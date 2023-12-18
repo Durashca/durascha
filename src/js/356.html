@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>356</title>
+</head>
+<body>
+<!--#1-->
+<p class="elem">text1</p>
+<p class="elem">text2</p>
+<p class="elem">text3</p>
+<p class="elem">text4</p>
+<p class="elem">text5</p>
+<button class="button">test</button>
+
+<!--#2-->
+<p class="elem2">text1</p>
+<p class="elem2">text2</p>
+<p class="elem2">text3</p>
+<p class="elem2">text4</p>
+<p class="elem2">text5</p>
+<button class="button2">test</button>
+
+<!--#3-->
+<input class="input3" value="!!!">
+<input class="input3" value="!!!">
+<h3 class="h3">!!!</h3>
+<button class="button3">test</button>
+
+<script>
+    //1
+    let elems = document.querySelectorAll('.elem')
+    let button = document.querySelector('.button')
+    button.addEventListener('click', function () {
+        for (elem of elems) {
+            elem.textContent += '!'
+        }
+    })
+
+    //2
+    let elems2 = document.querySelectorAll('.elem2')
+    let button2 = document.querySelector('.button2')
+
+    button2.addEventListener('click', function () {
+        let tot = 0
+
+        for (elem of elems2) {
+            elem.textContent += '№' + tot
+            tot++
+        }
+    })
+    //3
+    let inputs = document.querySelectorAll('.input3');
+    let h3 = document.querySelector('h3');
+    let button3 = document.querySelector('.button3');
+
+    button3.addEventListener('click', function() {
+        let sum = 0;
+
+        for (let input of inputs) {
+            sum += Number(input.value);
+        }
+
+        h3.textContent = sum;
+    });
+
+</script>
+</body>
+</html>
