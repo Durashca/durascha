@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>360</title>
+</head>
+<body>
+<p>text1</p>
+<p>text2</p>
+<p>text3</p>
+<p>text4</p>
+<p>text5</p>
+
+<script>
+  let elems = document.querySelectorAll('p');
+
+  for (let elem of elems) {
+    elem.addEventListener('click', func);
+  }
+
+  function func() {
+    this.textContent += '!'
+    this.removeEventListener('click', func); // отвязываем обработчик
+  }
+</script>
+</body>
+</html>
