@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>359</title>
+</head>
+<body>
+<a href="/src/images/img_1.png">text</a>
+<br>
+<button class="first">test</button>
+
+<script>
+    let button = document.querySelector('.first')
+    let a = document.querySelector('a')
+
+    button.addEventListener('click', func)
+
+    function func () {
+        this.textContent += '(' + this.href + ')'
+        this.removeEventListener('click',  func)
+    }
+</script>
+</body>
+</html>
