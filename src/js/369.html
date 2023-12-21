@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>369</title>
+</head>
+<body>
+<div id="elem" data-text="str">text</div>
+
+<script>
+  let div = document.querySelector('#elem')
+  div.addEventListener('click', function () {
+    this.textContent += '(' + this.dataset.text + ')'
+  })
+</script>
+</body>
+</html>
