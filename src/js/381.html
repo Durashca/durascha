@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>381</title>
+</head>
+<body>
+<p id="elem1">text1</p>
+<p id="elem2">text1</p>
+<p id="elem3">text1</p>
+
+<SCRIPT>
+    let elems = document.querySelectorAll('p');
+
+    for (let elem of elems) {
+        elem.addEventListener('click', function func() {
+            this.classList.toggle('colored');
+            if (!(this.classList.contains('colored'))){
+                this.classList.remove('colored')
+            }
+        });
+    }
+</SCRIPT>
+</body>
+</html>
