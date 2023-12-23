@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>380</title>
+    <style>
+        .aaa {
+            text-decoration: underline;
+        }
+
+        .bbb {
+            font-weight: bold;
+        }
+
+        .ccc {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<p>text1</p>
+<p>text2</p>
+<p>text3</p>
+
+<button id="elem1">decoration</button>
+<button id="elem2">bold</button>
+<button id="elem3">red</button>
+
+<script>
+    let elems = document.querySelectorAll('p');
+    let but1 = document.querySelector('#elem1')
+    let but2 = document.querySelector('#elem2')
+    let but3 = document.querySelector('#elem3')
+
+    for (let elem of elems) {
+        but1.addEventListener('click', function () {
+            elem.classList.add('aaa');
+            if (elem.classList.contains('bbb')) {
+                elem.classList.remove('bbb')
+            } else if (elem.classList.contains('ccc')) {
+                elem.classList.remove('ccc')
+            }
+        });
+        but2.addEventListener('click', function () {
+            elem.classList.add('bbb');
+
+            if (elem.classList.contains('aaa')) {
+                elem.classList.remove('aaa')
+            } else if (elem.classList.contains('ccc')) {
+                elem.classList.remove('ccc')
+            }
+        });
+        but3.addEventListener('click', function () {
+            elem.classList.add('ccc');
+
+            if (elem.classList.contains('bbb')) {
+                elem.classList.remove('bbb')
+            } else if (elem.classList.contains('aaa')) {
+                elem.classList.remove('aaa')
+            }
+        });
+    }
+
+</script>
+</body>
+</html>
