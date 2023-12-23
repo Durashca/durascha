@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>385</title>
+</head>
+<body>
+<div>
+    <ul>
+        <li>text</li>
+        <li>text</li>
+        <li id="elem">text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+</div>
+
+<script>
+    let li = document.querySelector('#elem')
+    let ul = document.querySelector(String(li.parentElement.nodeName).toLowerCase())
+
+    ul.style.border = '3px solid red'
+</script>
+</body>
+</html>
