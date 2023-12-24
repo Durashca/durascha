@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>386</title>
+</head>
+<body>
+<p>//1</p>
+<ul>
+    <li>text</li>
+    <li>text</li>
+    <li id="elem1">text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>
+<p>//2</p>
+<ul>
+    <li>text</li>
+    <li>text</li>
+    <li id="elem2">text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>
+
+<p>//3</p>
+<ul>
+    <li>text</li>
+    <li>text</li>
+    <li id="elem3">text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>
+
+<!--
+<p>//4</p>
+<ul>
+    <li>text1</li>
+    <li>text2</li>
+    <li id="elem4">text3</li>
+    <li>text4</li>
+    <li>text5</li>
+</ul>
+-->
+<script>
+    //1
+    let li = document.querySelector('#elem1')
+
+    li.previousElementSibling.textContent += '!'
+
+    //2
+    let li2 = document.querySelector('#elem2')
+
+    li2.nextElementSibling.textContent += '!'
+
+    //3
+    let li3 = document.querySelector('#elem3')
+
+    li3.nextElementSibling.nextElementSibling.textContent += '!'
+
+    //4
+    /*const currentElement = document.querySelector("#elem4");
+    let  previousElement = currentElement.previousElementSibling;
+    let  nextElement = currentElement.nextElementSibling;
+
+    previousElement = nextElement;
+    nextElement = previousElement;*/
+
+</script>
+</body>
+</html>
