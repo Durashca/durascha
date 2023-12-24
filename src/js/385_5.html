@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>385</title>
+</head>
+<body>
+<header>
+  <div>
+    <p>
+      <span id="elem1"></span>
+    </p>
+  </div>
+</header>
+
+<header>
+  <div class="www">
+    <p class="www">
+      <span id="elem2"></span>
+    </p>
+  </div>
+</header>
+
+<script>
+    let p = document.querySelector('#elem1')
+
+    console.log(p.closest('div'))
+
+    let p2 = document.querySelector('#elem2')
+
+    console.log(p2.closest('.www'))
+
+</script>
+</body>
+</html>
