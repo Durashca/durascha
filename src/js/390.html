@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>390</title>
+</head>
+<body>
+<div id="parent">
+  <p class="www">text</p>
+  <p class="www">text</p>
+  <p class="www">text</p>
+  <p class="ggg">text</p>
+  <p class="ggg">text</p>
+  <p class="ggg">text</p>
+</div>
+<script>
+  let parent = document.querySelector('#parent');
+
+  let elems1 = parent.querySelectorAll('.www')
+  for (elem of elems1){
+    elem.style.color = 'red'
+  }
+
+  let elems2 = parent.querySelectorAll('.ggg')
+  for (elem2 of elems2){
+    elem2.style.color = 'green'
+  }
+</script>
+</body>
+</html>
