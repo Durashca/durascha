@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>398</title>
+</head>
+<body>
+<p>//1</p>
+<input class="nom1" type="checkbox">
+<button class="on">on</button>
+<button class="off">off</button>
+<p>//2</p>
+<input class="nom2" type="checkbox">
+<button class="elem">!!!</button>
+<p class="active">!!!!</p>
+<script>
+    //1
+    inp = document.querySelector('.nom1')
+    but_on = document.querySelector('.on')
+    but_off = document.querySelector('.off')
+
+    but_on.addEventListener('click',
+        function () {
+            inp.checked = true
+        })
+    but_off.addEventListener('click', function () {
+        inp.checked = false
+    })
+
+    //2
+    inp2 = document.querySelector('.nom2')
+    but2 = document.querySelector('.elem')
+    p = document.querySelector('.active')
+
+    but2.addEventListener('click', function () {
+        if (inp2.checked){
+            p.textContent = 'привет'
+        }else {
+            p.textContent = 'пока'
+        }
+
+
+    })
+</script>
+</body>
+</html>
