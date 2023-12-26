@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>397</title>
+</head>
+<body>
+
+<p>//1</p>
+<input id="elem" disabled>
+<button>!!!</button>
+<p>//2</p>
+<input id="elem2" disabled>
+<button id="elem3">true</button>
+<button id="elem4">false</button>
+<p>//3</p>
+<input id="elem5" disabled>
+<button id="elem6">!!!</button>
+<script>
+    //1
+    inp = document.querySelector('#elem')
+    button = document.querySelector('button')
+    inp.disabled = false
+
+    button.addEventListener('click', function () {
+        inp.disabled = true
+    })
+    //2
+    inp2 = document.querySelector('#elem2')
+    button2 = document.querySelector('#elem3')
+    button3 = document.querySelector('#elem4')
+
+    button2.addEventListener('click', function () {
+        inp2.disabled = true
+    })
+    button3.addEventListener('click', function () {
+        inp2.disabled = false
+    })
+
+    //3
+    inp3 = document.querySelector('#elem5')
+    button4 = document.querySelector('#elem6')
+
+    button4.addEventListener('click', function () {
+        inp3.value = inp3.disabled
+    })
+</script>
+</body>
+</html>
