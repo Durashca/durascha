@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>401</title>
+</head>
+<body>
+<p>//1</p>
+<input id="elem">
+<p id="elem2">!!!</p>
+
+<p>//2</p>
+<input id="elem3" type="checkbox">
+<p id="elem4">!!!</p>
+
+<p>//3</p>
+<input id="elem5">
+<p id="elem6">!!!</p>
+<script>
+  inp = document.querySelector('#elem')
+  p = document.querySelector('#elem2')
+
+  inp.addEventListener('change', function () {
+    p.textContent = inp.value
+  })
+
+  inp2 = document.querySelector('#elem3')
+  p2 = document.querySelector('#elem4')
+  inp2.addEventListener('change', function () {
+    p2.textContent = inp.checked
+  })
+
+  inp3 = document.querySelector('#elem5')
+  p3 = document.querySelector('#elem6')
+
+  inp3.addEventListener('change', function () {
+    if (inp3.value.length <= 5){
+      inp3.style.border = ' 2px solid green'
+    }else {
+      inp3.style.border = '2px solid red'
+    }
+  })
+</script>
+</body>
+</html>
