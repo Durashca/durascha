@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>400</title>
+</head>
+<body>
+<input type="radio" name="elem" value="1" checked>
+<input type="radio" name="elem" value="2">
+<input type="radio" name="elem" value="3">
+<input type="radio" name="elem" value="4">
+<input type="radio" name="elem" value="5">
+
+<p id="res">!!!</p>
+
+<input id="button" type="submit">
+
+<script>
+    let radios = document.querySelectorAll('input[type="radio"]');
+    let button = document.querySelector('#button');
+    let result = document.querySelector('#res');
+
+    button.addEventListener('click', function () {
+        for (let radio of radios) {
+            if (radio.checked) {
+                result.textContent = radio.value;
+            }
+        }
+    });
+</script>
+</body>
+</html>
