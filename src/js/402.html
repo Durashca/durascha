@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>402</title>
+</head>
+<body>
+<input type="text" id="myInput" maxlength="5">
+<p id="counter"></p>
+<script>
+const input = document.getElementById('myInput');
+const counter = document.getElementById('counter');
+
+input.addEventListener('input', function() {
+const inputLength = input.value.length;
+const remainingChars = 5 - inputLength;
+
+if (remainingChars >= 0) {
+counter.textContent = `Можно ввести еще ${remainingChars} символов`;
+} else {
+const excessChars = Math.abs(remainingChars);
+counter.textContent = `Превышено на ${excessChars} символ(ов)`;
+}
+});
+</script>
+</body>
+</html>
