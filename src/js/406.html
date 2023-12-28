@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>406</title>
+</head>
+<body>
+<select id="elem">
+  <option value="1">пн</option>
+  <option value="2">вт</option>
+  <option value="3">ср</option>
+  <option value="4">чт</option>
+  <option value="5">пт</option>
+  <option value="6">сб</option>
+  <option value="7">вс</option>
+</select>
+<div>!!!</div>
+
+<script>
+  let sel = document.querySelector('#elem')
+  let div = document.querySelector('div')
+  sel.addEventListener('click', function () {
+      if (sel.value == 6 || sel.value == 7){
+           div.textContent = `ура сегодня выходной!!!☺(${sel.value})`
+
+      }else {
+          div.textContent = `сегодня не выходной(${sel.value})`
+      }
+  })
+</script>
+</body>
+</html>
