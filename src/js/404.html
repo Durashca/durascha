@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+</head>
+<body>
+<!--1-->
+<textarea></textarea>
+<div>!!!</div>
+<!--2-->
+<input type="checkbox">
+<div id="elem2">!!!</div>
+<button>button</button>
+<!--3-->
+<input id="elem3" type="checkbox">
+<button id="elem4">button</button>
+<script>
+    //1
+    let textarea = document.querySelector('textarea');
+    let div = document.querySelector('div');
+
+    textarea.addEventListener('blur', function () {
+        div.textContent = textarea.value;
+    });
+
+    //2
+    let checkbox = document.querySelector('input[type="checkbox"]');
+    let button = document.querySelector('button');
+    let div2 = document.querySelector('#elem2');
+
+    button.addEventListener('click', function() {
+        if (checkbox.checked) {
+            div2.textContent = '111';
+        } else {
+            div2.textContent = '222';
+        }
+    });
+
+    //3
+    let checkbox3 = document.querySelector('#elem3');
+    let button3 = document.querySelector('#elem4');
+
+    button3.addEventListener('click', function() {
+        if (checkbox3.checked) {
+            button3.textContent = '+++';
+        } else {
+            button3.textContent = '---';
+        }
+    });
+</script>
+</body>
+</html>
