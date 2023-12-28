@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>405</title>
+</head>
+<body>
+<!--//1-->
+<select id="select">
+  <option>#1</option>
+  <option>#2</option>
+  <option>#3</option>
+</select>
+<h1>!!!</h1>
+<button id = "button">click</button>
+<!--//2-->
+<select id="yearSelect">
+  <option value="" disabled selected>Select a Year</option>
+  <option value="2020">2020</option>
+  <option value="2021">2021</option>
+  <option value="2022">2022</option>
+  <option value="2023">2023</option>
+  <option value="2024">2024</option>
+  <option value="2025">2025</option>
+  <option value="2026">2026</option>
+  <option value="2027">2027</option>
+  <option value="2028">2028</option>
+  <option value="2029">2029</option>
+  <option value="2030">2030</option>
+</select>
+
+<div id="result"></div>
+
+<script>
+  //1
+  let sel = document.querySelector('#select')
+  let h1 = document.querySelector('h1')
+  button = document.querySelector('#button')
+
+  button.addEventListener('click', function () {
+      h1.textContent = sel.value
+  })
+  //2
+  const yearSelect = document.getElementById('yearSelect');
+  const result = document.getElementById('result');
+
+  yearSelect.addEventListener('change', function() {
+    const selectedYear = yearSelect.value;
+    if (selectedYear) {
+      const isLeapYear = isLeap(selectedYear);
+      if (isLeapYear) {
+        result.textContent = `${selectedYear} is a leap year! 🎉`;
+      } else {
+        result.textContent = `${selectedYear} is not a leap year. 😢`;
+      }
+    } else {
+      result.textContent = "";
+    }
+  });
+
+  // Функция для проверки високосности года
+  function isLeap(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+  }
+</script>
+</body>
+</html>
