@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>403</title>
+</head>
+<body>
+<input id="elem1">
+<input id="elem2">
+
+<script>
+    let i1 = document.querySelector('#elem1')
+    let i2 = document.querySelector('#elem2')
+
+    i1.addEventListener('change', function () {
+        if (i1.value.length === 2){
+            i2.focus()
+        }
+    })
+    i2.addEventListener('change', function (){
+        if (i2.value.length === 2){
+            i2.blur()
+        }
+    })
+</script>
+</body>
+</html>
