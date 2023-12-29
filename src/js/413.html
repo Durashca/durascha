@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>413</title>
+</head>
+<body>
+<select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+<button>!!!</button>
+<div id="res">☺</div>
+
+<select id="elem2">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+<button id="elem3">-_-</button>
+<script>
+    sel = document.querySelector('select')
+    button = document.querySelector('button')
+    div = document.querySelector('#res')
+
+    button.addEventListener('click', function () {
+        div.textContent = sel[sel.selectedIndex].textContent
+    })
+
+    select = document.querySelector('#elem2')
+    but2 = document.querySelector('#elem3')
+
+    but2.addEventListener('click', function () {
+        select[select.selectedIndex].textContent += '!'
+    })
+
+</script>
+</body>
+</html>
