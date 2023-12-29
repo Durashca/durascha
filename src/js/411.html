@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>411</title>
+</head>
+<body>
+<select id="elem">
+  <option selected>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+
+<script>
+  sel = document.querySelector('#elem')
+  for (let opt of sel){
+    if (opt.selected){
+      opt.textContent += '!'
+    }else {
+      opt.textContent += '?'
+    }
+  }
+</script>
+</body>
+</html>
