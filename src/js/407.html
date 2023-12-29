@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>407</title>
+</head>
+<body>
+<select id="monthSelect">
+    <option value="1">январь</option>
+    <option value="2">февраль</option>
+    <option value="3">март</option>
+    <option value="4">апрель</option>
+    <option value="5">май</option>
+    <option value="6">июнь</option>
+    <option value="7">июль</option>
+    <option value="8">август</option>
+    <option value="9">сентябрь</option>
+    <option value="10">октябрь</option>
+    <option value="11">ноябрь</option>
+    <option value="12">декабрь</option>
+</select>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let currentDate = new Date();
+        let currentMonth = currentDate.getMonth() + 1; // Месяцы в JavaScript нумеруются с 0
+
+        let monthSelect = document.getElementById('monthSelect');
+
+        for (let elem of monthSelect){
+            if (elem.value == currentMonth){
+                elem.selected = true
+                break
+            }
+        }
+    });
+</script>
+</body>
+</html>
