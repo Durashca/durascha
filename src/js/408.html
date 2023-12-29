@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>408</title>
+</head>
+<body>
+<input id="elem">
+<select>
+  <option value="#1">x < 1</option>
+  <option value="#2">x = 1</option>
+  <option value="#3">x > 1</option>
+</select>
+
+<select id="weekdaySelect">
+  <option value="0">Воскресенье</option>
+  <option value="1">Понедельник</option>
+  <option value="2">Вторник</option>
+  <option value="3">Среда</option>
+  <option value="4">Четверг</option>
+  <option value="5">Пятница</option>
+  <option value="6">Суббота</option>
+</select>
+<p id="selectedDay"></p>
+<script>
+  let sel = document.querySelector('select')
+  let inp = document.querySelector('#elem')
+  inp.addEventListener('blur', function () {
+    if (inp.value < 1){
+      sel.selectedIndex = 0
+      sel.style.borderColor = 'red'
+    }else if (inp.value == 1){
+      sel.selectedIndex = 1
+      sel.style.borderColor = 'green'
+    }else if (inp.value > 1){
+      sel.selectedIndex = 2
+      sel.style.borderColor = 'gold'
+
+    }
+  })
+
+  document.addEventListener("DOMContentLoaded", function() {
+    let currentDate = new Date();
+    let currentDay = currentDate.getDay(); // Воскресенье - 0, Понедельник - 1, ...
+
+    let p = document.getElementById('selectedDay');
+    let weekdaySelect = document.getElementById('weekdaySelect');
+
+    for (let i = 0; i < weekdaySelect.options.length; i++) {
+      if (i === currentDay) {
+        weekdaySelect.options[i].selected = true;
+        p.textContent = weekdaySelect.options[i].textContent;
+        break;
+      }
+    }
+  });
+</script>
+</body>
+</html>
