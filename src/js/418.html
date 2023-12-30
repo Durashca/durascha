@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>418</title>
+</head>
+<body>
+<button id="elem">text</button>
+
+<script>
+    let elem = document.querySelector('#elem');
+
+    elem.addEventListener('click', func);
+    elem.addEventListener('dblclick', func);
+
+    function func(even) {
+        if (even.type == 'click') {
+            elem.style.color = 'green'
+        }else if (even.type = 'dblclick') {
+            elem.style.color = 'red'
+        }
+    }
+</script>
+</body>
+</html>
