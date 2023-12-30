@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>417</title>
+</head>
+<body>
+<div id="elem">0:0</div>
+<script>
+  let div = document.getElementById('elem')
+  document.addEventListener('mousemove', function (event) {
+    div.innerHTML = event.pageX + ':' + event.pageY
+  })
+</script>
+</body>
+</html>
