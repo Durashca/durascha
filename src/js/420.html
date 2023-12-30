@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>420</title>
+</head>
+<body>
+<input id="elem">
+
+<br>
+
+<input id="elem2">
+<p>!!!</p>
+<script>
+    let inp = document.querySelector('#elem')
+
+    inp.addEventListener('keypress', function (event) {
+        console.log(event.key)
+        console.log(event.code)
+    })
+
+    let inp2 = document.querySelector('#elem2')
+    let p = document.querySelector('p')
+    inp2.addEventListener('keypress', function (event2) {
+        if (event2.key == 'Enter') {
+            p.textContent = inp2.value
+            inp2.value  = ''
+
+        }
+    })
+</script>
+</body>
+</html>
