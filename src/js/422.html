@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>422</title>
+</head>
+<body>
+<a href="/src/js/421.html">!!!</a>
+<br>
+
+<input class="aaa">
+<input class="aaa">
+<br>
+<a class="aaa" href="/src/js/421.html">!!!</a>
+<p>text</p>
+
+<script>
+    //1
+    let res = true
+    let a = document.querySelector('a')
+    a.addEventListener('click', function func(event) {
+        event.preventDefault()
+        if (res) {
+            this.textContent += this.href
+            res = false
+        }
+
+    })
+
+    //2
+    let inp_arr = document.querySelectorAll('.aaa')
+    let p = document.querySelector('p')
+    let a2 = document.querySelector('a.aaa')
+
+    a2.addEventListener('click', function (event) {
+        event.preventDefault()
+        p.textContent = Number(inp_arr[0].value) + Number(inp_arr[1].value)
+    })
+
+
+</script>
+</body>
+</html>
