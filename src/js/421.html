@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>421</title>
+</head>
+<body>
+<p>text</p>
+
+<ul id="elem">
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>
+<script>
+    let p = document.querySelector('p')
+
+    p.addEventListener('click', function (event) {
+        if (event.altKey) {
+            this.style.color = 'red'
+        }
+    })
+
+    let li = document.querySelector('#elem li')
+    li.addEventListener('click', function (event) {
+        if (event.shiftKey) {
+            this.textContent += 1
+        }
+
+        if (event.ctrlKey) {
+            this.textContent += 2
+        }
+    })
+</script>
+</body>
+</html>
