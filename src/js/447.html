@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>447</title>
+</head>
+<body>
+<button id="start">start</button>
+<script>
+  let start = document.querySelector('#start');
+
+  start.addEventListener('click', function() {
+    let i = 100;
+
+    let interval =   setInterval(function() {
+      console.log(--i);
+
+      if (i === 0){
+        clearInterval(interval)
+      }
+
+      this.removeEventListener('click', func); // отвязываем обработчик
+    }, 1000);
+  });
+</script>
+</body>
+</html>
