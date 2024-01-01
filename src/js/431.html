@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>431</title>
+    <style>
+        ul {
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+        }
+        li {
+            width: auto;
+            height: auto;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+<ul>
+  <li>*</li>
+  <li>*</li>
+  <li>*</li>
+</ul>
+
+<script>
+  let ul = document.querySelector('ul')
+
+  ul.addEventListener('click', function (event) {
+      if(event.target.tagName === 'LI'){
+          event.target.textContent += '!'
+      }
+  })
+</script>
+</body>
+</html>
