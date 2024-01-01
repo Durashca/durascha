@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>438</title>
+</head>
+<body>
+<input id="elem" value="3">
+
+<script>
+    let inp = document.querySelector('#elem')
+    
+    inp.addEventListener('blur', func)
+
+    function func() {
+        alert( square(this) );
+
+        function square(param) {
+            return param.value ** 2;
+        }
+    }
+</script>
+</body>
+</html>
