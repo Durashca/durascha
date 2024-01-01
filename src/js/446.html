@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>446</title>
+</head>
+<body>
+<script>
+  let num = 10
+
+  let   timerid = setInterval(function () {
+    console.log(--num)
+
+    if (num === 0){
+      clearInterval(timerid)
+    }
+  }, 1000)
+</script>
+</body>
+</html>
