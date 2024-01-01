@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>441</title>
+</head>
+<body>
+<input id="elem" value="hello">
+
+<script>
+  let elem = document.querySelector('#elem');
+
+  function func(elem, name,  surname) {
+    console.log(elem.value + ', ' + name + ' ' + surname);
+  }
+
+  func(elem,  'Jonn', 'Smit'); // тут должно вывести 'hello, John Smit'
+</script>
+</body>
+</html>
