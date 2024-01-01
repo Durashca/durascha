@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>428</title>
+    <style>
+        #block:not(.active) {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <button>click me</button>
+    <div id="block">
+        text
+    </div>
+</div>
+<script>
+    let parent = document.querySelector('#parent');
+    let button = document.querySelector('button');
+    let block  = document.querySelector('#block');
+
+    button.addEventListener('click', function() {
+        block.classList.add('active');
+    });
+    parent.addEventListener('click', function() {
+        block.classList.remove('active');
+    });
+
+</script>
+</body>
+</html>
