@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>443</title>
+</head>
+<body>
+<input id="elem" value="привет">
+<script>
+let elem = document.getElementById('elem');
+
+function func(name, surname) {
+console.log(this.value + ', ' + name + ' ' + surname);
+}
+
+func = func.bind(elem)
+
+func('John', 'Smit'); // тут должно вывести 'hello, John Smit'
+func('Eric', 'Luis'); // тут должно вывести 'hello, Eric Luis'
+</script>
+</body>
+</html>
