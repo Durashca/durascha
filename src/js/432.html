@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>432</title>
+</head>
+<body>
+<ul>
+    <li>item <i>italic</i> item</li>
+    <li>item <i>italic</i> item</li>
+    <li>item <i>italic</i> item</li>
+    <li>item <i>italic</i> item</li>
+    <li>item <i>italic</i> item</li>
+</ul>
+<script>
+    ul = document.querySelector('ul')
+    ul.addEventListener('click', function(event) {
+        let li = event.target.closest('li');
+        if (li) {
+            li.textContent = li.textContent + '!';
+        }
+    });
+
+</script>
+</body>
+</html>
