@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>439</title>
+</head>
+<body>
+<input id="elem" value="3">
+
+<script>
+  let inp = document.querySelector('#elem')
+
+  inp.addEventListener('blur', func)
+
+  function func() {
+    let child = () => {
+      return this.value ** 2
+    }
+    alert(child())
+  }
+</script>
+</body>
+</html>
