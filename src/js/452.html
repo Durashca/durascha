@@ -13,6 +13,7 @@
 <input id="elem3" value="10">
 <p id="elem4">!</p>
 
+<p id="data">0:0:0</p>
 <script>
     let p = document.querySelector('#elem')
     let button = document.querySelector('#elem2')
@@ -47,6 +48,23 @@
 
         }, 1000)
     })
+
+    let p_d = document.querySelector('#data')
+    let sec = 0
+    let min = 0
+    let sh = 0
+    setInterval(function (){
+        sec++
+        if (sec === 60){
+            sec = 0
+            min += 1
+        }else if (min === 60){
+            min = 0
+            sh += 1
+        }
+        p_d.textContent = sh + ':' + min + ':' + sec
+    }, 1000)
+
 
 </script>
 </body>
