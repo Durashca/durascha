@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>455</title>
+</head>
+<body>
+<ol id="elem"></ol>
+
+<ol id="elem2"></ol>
+<button id="button">click me</button>
+<script>
+  let ol = document.querySelector('#elem')
+  let li = document.createElement('li')
+  li.textContent = '!'
+  ol.appendChild(li)
+
+  let ol2 = document.querySelector('#elem2')
+  let but = document.querySelector('#button')
+  but.addEventListener('click', function () {
+      let li2 = document.createElement('li')
+      li2.textContent = 'item'
+      ol2.appendChild(li2)
+
+  })
+</script>
+</body>
+</html>
