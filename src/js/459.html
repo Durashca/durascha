@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>459</title>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+
+<ul id="parent">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+<input type="submit" id="button">
+<script>
+    let elems = document.querySelectorAll('ul');
+
+    for (let elem of elems) {
+        elem.addEventListener('click', function() {
+            elem.remove();
+        });
+    }
+
+    let ul_arr = document.querySelectorAll('#parent')
+    let but = document.querySelector('#button')
+
+           for (let i = 0; i <= ul_arr.length; i++){
+               but.addEventListener('click', function () {
+                   ul_arr[ul_arr.length - 1].remove()
+           })
+
+        }
+
+
+
+
+</script>
+</body>
+</html>
