@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>454</title>
+</head>
+<body>
+<script>
+  let num1 = 1
+  let num2 = 1000
+  function func() {
+    setTimeout(function () {
+      console.log(num1++)
+      func()
+    } ,num2 * num1)
+  }
+  func()
+</script>
+</body>
+</html>
