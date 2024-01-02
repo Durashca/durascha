@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>456</title>
+</head>
+<body>
+<ol>
+  <li>*</li>
+  <li>*</li>
+  <li>*</li>
+</ol>
+<button>☺</button>
+<script>
+  let ol = document.querySelector('ol')
+  let but = document.querySelector('button')
+  let li = document.createElement('li')
+  li.textContent = '*'
+
+  but.addEventListener('click', function () {
+    ol.appendChild(li)
+  })
+  ol.addEventListener('click', function (event) {
+    event.target.textContent += '!'
+  })
+
+
+
+</script>
+</body>
+</html>
