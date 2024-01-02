@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>462</title>
+</head>
+<body>
+<div id="elem" style="border: 1px solid red;">
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+</div>
+<br>
+<div id="elem2" style="border: 1px solid red;">
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+</div>
+<br>
+
+<div id="elem3" style="border: 1px solid red;">
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+</div>
+<br>
+<div id="elem4" style="border: 1px solid red;">
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+</div>
+<script>
+    let div = document.querySelector('#elem')
+    let p = document.createElement('p')
+    p.textContent = '!!!'
+    div.insertAdjacentElement('beforebegin', p)
+
+    let div2 = document.querySelector('#elem2')
+    let p2 = document.createElement('p')
+    p2.textContent = '!!!'
+    div2.insertAdjacentElement('afterend', p2)
+
+    let div3 = document.querySelector('#elem3')
+    let p3 = document.createElement('p')
+    p3.textContent = '!!!'
+    div3.insertAdjacentElement('afterbegin', p3)
+
+    let div4 = document.querySelector('#elem4')
+    let p4 = document.createElement('p')
+    p4.textContent = '!!!'
+    div4.insertAdjacentElement('beforeend', p4)
+</script>
+</body>
+</html>
