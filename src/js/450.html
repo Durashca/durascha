@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>450</title>
+</head>
+<body>
+<input id="elem" value="10">
+<script>
+  let inp = document.querySelector('#elem')
+
+  let interval = setInterval(function () {
+    inp.value = Number(inp.value) - 1
+
+    if (inp.value == 0){
+      clearInterval(interval)
+
+    }
+  }, 1000)
+
+</script>
+</body>
+</html>
