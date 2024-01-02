@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>460</title>
+</head>
+<body>
+<ul id="elem">
+  <li>text</li>
+  <li>text</li>
+  <li>text</li>
+  <li>text</li>
+  <li>text</li>
+</ul>
+
+<script>
+  ul = document.querySelector('ul')
+
+  let li = document.createElement('li')
+  li.textContent = 'start'
+  ul.prepend(li)
+
+  let li2 = document.createElement('li')
+  li2.textContent = 'finish'
+  ul.append(li2)
+
+</script>
+</body>
+</html>
