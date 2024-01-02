@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>451</title>
+</head>
+<body>
+<input type="button" id="elem" value="1">
+<script>
+    let elem = document.querySelector('#elem');
+
+    elem.addEventListener('click', function () {
+        let self = this
+        setInterval(function func() {
+            self.value = Number(self.value) + 1;
+        }, 1000);
+    });
+</script>
+</body>
+</html>
