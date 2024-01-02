@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>452</title>
+</head>
+<body>
+<p id="elem">1</p>
+<button id="elem2">!!!</button>
+
+<br>
+
+<input id="elem3" value="10">
+<p id="elem4">!</p>
+
+<script>
+    let p = document.querySelector('#elem')
+    let button = document.querySelector('#elem2')
+
+    button.addEventListener('click', function func() {
+        let timerid = setInterval(function () {
+
+            if (p.textContent == 10) {
+                clearInterval(timerid)
+                removeEventListener('click', func)
+            }
+
+            p.textContent = Number(p.textContent) + 1
+
+        }, 1000)
+
+    })
+
+    let inp =document.querySelector('#elem3')
+    let p2 = document.querySelector('#elem4')
+    let num = Number(inp.value)
+    inp.addEventListener('blur', function func() {
+        let timerId = setInterval(function () {
+            if (p2.textContent == 0){
+                clearInterval(timerId)
+
+                removeEventListener('click', func)
+
+            }
+            p2.textContent = String(--num)
+
+
+        }, 1000)
+    })
+
+</script>
+</body>
+</html>
