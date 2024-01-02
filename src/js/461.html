@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>461</title>
+</head>
+<body>
+<ul id="parent">
+  <li>text</li>
+  <li>text</li>
+  <li id="elem">text</li>
+  <li>text</li>
+  <li>text</li>
+</ul>
+<script>
+  let ul = document.querySelector('#parent')
+  let li = document.querySelector('#elem')
+  let li_new = document.createElement('li')
+  li_new.textContent = 'new'
+  ul.insertBefore(li_new, li)
+
+  ul.addEventListener('click', function (event) {
+    event.target.textContent += '!'
+  })
+
+
+
+</script>
+</body>
+</html>
