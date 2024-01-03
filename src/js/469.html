@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>469</title>
+</head>
+<body>
+<table id="table"></table>
+
+<script>
+    let tab = document.querySelector('table')
+    let k = 5
+    for (let i = 1; i <= 5; i++) {
+        let tr = document.createElement('tr')
+        tr.textContent = 'stolb'
+        tab.appendChild(tr)
+
+        for (let j = 1; j <= 5; j++) {
+        }
+        let td = document.createElement('td')
+        td.textContent = k
+        k += 5
+        tab.appendChild(td)
+    }
+
+</script>
+</body>
+</html>
