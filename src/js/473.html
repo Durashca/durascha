@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>473</title>
+</head>
+<body>
+<button>!!!</button>
+<table>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+</table>
+
+<script>
+  let td_arr = document.querySelectorAll('table td')
+  let bt = document.querySelector('button')
+  bt.addEventListener('click', function () {
+    for (let td of td_arr){
+      td.textContent *= 2
+    }
+  })
+
+
+</script>
+</body>
+</html>
