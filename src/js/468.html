@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>468</title>
+</head>
+<body>
+<input id="width">
+<input id="height">
+<input id="button" type="submit">
+<script>
+
+  let inp_w = document.querySelector('#width')
+  let inp_h = document.querySelector('#height')
+  let button = document.querySelector('#button')
+
+  button.addEventListener('click', function func() {
+    let table = document.createElement('table')
+    table.style.width = inp_w.value
+    table.style.height = inp_h.value
+    table.style.border = '2px solid red'
+    table.insertAdjacentElement('afterend', table)
+
+
+
+    for (let i = 1; i <= 10; i++){
+      let tr = document.createElement('tr')
+      tr.textContent = '!'
+      table.appendChild(tr)
+      for (let y = 1; y <= 5; y++){
+        let td = document.createElement('td')
+        td.textContent = '*'
+      }
+    }
+
+
+    removeEventListener('click', func)
+  })
+
+</script>
+</body>
+</html>
