@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>465</title>
+</head>
+<body>
+<div id="elem" class="www"></div>
+
+<p id="elem2">!!!</p>
+
+<div id="elem3">
+    <p id="elem4"></p>
+</div>
+
+<script>
+    //1
+    let div = document.querySelector('div')
+    let mantches = div.matches('.www')
+    console.log(mantches)
+    //2
+    let p = document.querySelector('#elem2')
+    p.textContent = p.contains(p)
+    //3
+    let elem3 = document.querySelector('#elem3');
+    let elem4 = document.querySelector('#elem4');
+    elem4.textContent = elem3.contains(elem4)
+
+
+</script>
+</body>
+</html>
