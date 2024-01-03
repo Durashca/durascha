@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>476</title>
+</head>
+<body>
+<ul>
+  <li>$</li>
+  <li>$</li>
+  <li>$</li>
+  <li>$</li>
+</ul>
+
+<script>
+  let li_arr = document.querySelectorAll('ul li')
+
+  for (let li of li_arr){
+    let a = document.createElement('a')
+    a.href = ''
+    a.textContent = '!'
+    li.appendChild(a)
+
+    a.addEventListener('click', function (event) {
+      li.remove()
+      event.preventDefault();
+
+    })
+  }
+</script>
+</body>
+</html>
