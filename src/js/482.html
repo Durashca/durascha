@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>482</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<p id="elem">text</p>
+<input type="submit" id="bt" value="bt">
+
+<script>
+    let flag = true
+    let elem = document.querySelector('#elem');
+    let bt = document.querySelector('#bt');
+    bt.addEventListener('click', function () {
+        if (flag) {
+            flag = false
+            elem.classList.add('hidden')
+        } else {
+            flag = true
+            elem.classList.remove('hidden')
+        }
+    })
+
+
+</script>
+</body>
+</html>
