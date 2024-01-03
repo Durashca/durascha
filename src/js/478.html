@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>478</title>
+</head>
+<body>
+<p>!</p>
+
+<script>
+    let p = document.querySelector('p')
+    p.addEventListener('click', function func() {
+        let inp = document.createElement('input')
+        inp.value = p.textContent
+        p.textContent = ''
+        p.appendChild(inp)
+
+        inp.addEventListener('blur', function () {
+            p.textContent = this.value
+            p.addEventListener('click', func)
+        })
+
+        removeEventListener('click', func)
+
+    })
+</script>
+</body>
+</html>
