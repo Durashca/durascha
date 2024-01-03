@@ -5,6 +5,7 @@
     <title>468</title>
 </head>
 <body>
+<table></table>
 <input id="width">
 <input id="height">
 <input id="button" type="submit">
@@ -15,12 +16,10 @@
   let button = document.querySelector('#button')
 
   button.addEventListener('click', function func() {
-    let table = document.createElement('table')
-    table.style.width = inp_w.value
-    table.style.height = inp_h.value
+    let table = document.querySelector('table')
+    table.style.width = inp_w.value + 'px'
+    table.style.height = inp_h.value + 'px'
     table.style.border = '2px solid red'
-    table.insertAdjacentElement('afterend', table)
-
 
 
     for (let i = 1; i <= 10; i++){
@@ -33,8 +32,6 @@
       }
     }
 
-
-    removeEventListener('click', func)
   })
 
 </script>
