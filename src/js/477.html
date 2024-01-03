@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>477</title>
+</head>
+<body>
+<div id="parent">
+    <p id="elem">text</p>
+    <input id="input">
+</div>
+
+<p id="p">☺</p>
+
+<script>
+    let elem = document.querySelector('#elem');
+    let input = document.querySelector('#input');
+
+    input.value = elem.textContent; // записываем в инпут текст абзаца
+
+    input.addEventListener('change', function () {
+        elem.textContent = this.value;
+    });
+
+    let p = document.querySelector('#p')
+    p.addEventListener('click', function func() {
+        let inp = document.createElement('input')
+        inp.value = p.textContent
+        p.appendChild(inp)
+
+        inp.addEventListener('blur', function () {
+            p.textContent = inp.value
+            inp.remove()
+        })
+
+    })
+</script>
+</body>
+</html>
