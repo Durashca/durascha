@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>464</title>
+</head>
+<body>
+<div>
+<input id="elem" value="3">
+<input id="button" type="submit">
+</div>
+<script>
+    let inp = document.querySelector('#elem')
+    let div = document.querySelector('div')
+    let but = document.querySelector('#button')
+    but.addEventListener('click', function () {
+        let inp_new = inp.cloneNode(true)
+        div.appendChild(inp_new)
+    })
+
+
+</script>
+</body>
+</html>
