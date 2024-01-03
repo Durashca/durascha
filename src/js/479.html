@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>479</title>
+</head>
+<body>
+<ul>
+  <li>@</li>
+  <li>@</li>
+  <li>@</li>
+</ul>
+<script>
+  let li_arr = document.querySelectorAll('ul li')
+
+  for (let li of li_arr){
+    li.addEventListener('click', function func() {
+      let input = document.createElement('input');
+      input.value = li.textContent;
+
+      li.textContent = '';
+      li.appendChild(input);
+
+      input.addEventListener('blur', function() {
+        li.textContent = this.value;
+        li.addEventListener('click', func);
+      });
+
+      li.removeEventListener('click', func);
+    });
+  }
+</script>
+</body>
+</html>
