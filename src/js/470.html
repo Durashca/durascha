@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>470</title>
+</head>
+<body>
+<table></table>
+
+<script>
+  let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]];
+  let tab = document.querySelector('table')
+  for (let elem_arr of arr){
+    let tr = document.createElement('tr')
+    tab.appendChild(tr)
+
+    for (let elem of elem_arr){
+      let td = document.createElement('td')
+      td.textContent = String(elem ** 2)
+      tab.appendChild(td)
+    }
+  }
+</script>
+</body>
+</html>
