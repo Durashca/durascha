@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>490</title>
+</head>
+<body>
+<p>@#$</p>
+<p>@#$</p>
+<p>@#$</p>
+
+<script>
+  function forEach(selector, func) {
+    let elems = document.querySelectorAll(selector);
+
+    for (let i = 0; i < elems.length; i++) {
+      func(elems[i], i);
+    }
+  }
+  forEach('p', function(elem, index) {
+    elem.textContent = elem.textContent + index;
+  });
+</script>
+</body>
+</html>
