@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>481</title>
+    <style>
+        .aaa {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+<p><span>text1</span><a href="">link</a></p>
+<p><span>text2</span><a href="">link</a></p>
+<p><span>text3</span><a href="">link</a></p>
+<script>
+    let p_arr = document.querySelectorAll('p span')
+    let a_arr = document.querySelectorAll('p a')
+
+    for (let i = 0; i < 3; i++) {
+        a_arr[i].addEventListener('click', function (event) {
+            event.preventDefault()
+            p_arr[i].classList.toggle('aaa')
+
+        })
+    }
+
+</script>
+</body>
+</html>
