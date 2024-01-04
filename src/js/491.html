@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>491</title>
+</head>
+<body>
+<p class="elem">!@#$_</p>
+<p class="elem">!@#$_</p>
+<p class="elem">!@#$_</p>
+
+<script>
+  function func(elems_DOM, text) {
+    let elems = document.querySelectorAll(elems_DOM)
+    for (let elem of elems){
+      console.log(elem)
+      elem.textContent += String(text)
+    }
+  }
+  func('.elem' , 'text')
+  func('.elem' , '!')
+
+</script>
+</body>
+</html>
