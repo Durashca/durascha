@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>499</title>
+</head>
+<body>
+<input id="elem1">
+<input id="elem2">
+<input id="elem3">
+<button>!!!</button>
+
+<script>
+    ;(function (sel1, sel2, sel3, bt) {
+        let inp1 = document.querySelector(sel1)
+        let inp2 = document.querySelector(sel2)
+        let inp3 = document.querySelector(sel3)
+        let button = document.querySelector(bt)
+        function func(elem) {
+            return Number(elem) + Number(elem)
+        }
+
+        button.addEventListener('click', function () {
+              console.log(func(inp1.value))
+              console.log(func(inp2.value))
+              console.log(func(inp3.value))
+
+        })
+
+    })('#elem1', '#elem2', '#elem3', 'button')
+</script>
+</body>
+</html>
