@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>492</title>
+</head>
+<body>
+<uL>
+  <li>$</li>
+  <li>$</li>
+  <li>$</li>
+</uL>
+
+<script>
+  let ul = document.querySelector('ul')
+
+  function func_ul(elem_ul, text) {
+    let li = document.createElement('li')
+    li.textContent = text
+    elem_ul.appendChild(li)
+  }
+  func_ul(ul, '☻')
+</script>
+</body>
+</html>
