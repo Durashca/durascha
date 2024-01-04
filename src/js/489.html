@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>489</title>
+</head>
+<body>
+<p>@#$</p>
+<p>@#$</p>
+<p>@#$</p>
+<p>@#$</p>
+
+<script>
+  
+  function forEach (sel, func){
+    let elems = document.querySelectorAll(sel)
+    for (let elem of elems){
+      func(elem)
+    }
+  }
+  forEach('p', function (elem) {
+    elem.textContent += '!'
+  })
+</script>
+</body>
+</html>
