@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>487</title>
+</head>
+<body>
+<p id="elem">!!!</p>
+<p class="aaa">!!!</p>
+<script>
+    function setText(sel, text) {
+        let elem = document.querySelector(sel);
+        elem.textContent = text;
+    }
+    setText('#elem', '@')
+    setText('.aaa', '#')
+
+    function setArr (sel, atr , new_meaning){
+        let elem = document.querySelector(sel)
+        elem.setAttribute(atr,  new_meaning)
+        console.log(elem)
+
+    }
+    setArr('.aaa', 'id', 'ccc')
+
+</script>
+</body>
+</html>
