@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>485</title>
+  <style>
+    .color1 {
+      background: red;
+    }
+    .color2 {
+      background: green;
+    }
+  </style>
+</head>
+<body>
+<table id="table">
+  <tr>
+    <td>@</td>
+    <td>@</td>
+    <td>@</td>
+  </tr>
+
+    <table id="table2">
+        <tr>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+        </tr>
+    </table>
+</table>
+<script>
+  let tds = document.querySelectorAll('#table td');
+
+  let color1 = 'color1';
+  for (let td of tds) {
+    td.addEventListener('click', function() {
+      if (color1 == 'color1') {
+        color1 = 'color2'
+      } else {
+        color1 = 'color1'
+      }
+
+      this.classList.add(color);
+    });
+  }
+
+  //2
+  let tds2 = document.querySelectorAll('#table2 td');
+
+  let i = 0;
+  let colors = ['color1', 'color2', 'color3'];
+
+  for (let td of tds2) {
+      td.addEventListener('click', function() {
+          this.classList.add(colors[i]);
+
+          i++;
+          if (i == colors.length) {
+              i = 0;
+          }
+      });
+  }
+</script>
+</body>
+</html>
