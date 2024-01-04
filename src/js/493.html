@@ -23,11 +23,11 @@
     function createTable(rows, cols, parent) {
         let table = document.createElement('table');
         // тут создадим таблицу с rows рядами и cols колонками
-        for (let i = 0; i < Number(rows); i++) {
+        for (let i = 0; i < rows; i++) {
             let tr = document.createElement('tr')
             tr.textContent = '@@@'
             table.appendChild(tr)
-            for (let j = 0; j < Number(cols); j++) {
+            for (let j = 0; j < cols; j++) {
                 let td = document.createElement('td')
                 td.textContent = '!!!'
                 tr.appendChild(td)
@@ -35,7 +35,7 @@
         }
         parent.appendChild(table);
     }
-    let table = createTable('3', '4', div)
+    let table = createTable(3, 4, div)
     div.appendChild(table)
 </script>
 </body>
