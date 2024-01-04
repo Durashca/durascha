@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>488</title>
+</head>
+<body>
+<p class="elem">!!!</p>
+<p class="elem">!!!</p>
+<p class="elem">!!!</p>
+<p class="elem">!!!</p>
+
+<script>
+  function appendText (sel, text){
+    let elems = document.querySelectorAll(sel)
+    for ( let elem of elems){
+      elem.textContent = text
+    }
+  }
+
+  appendText('.elem', '@#@')
+</script>
+</body>
+</html>
