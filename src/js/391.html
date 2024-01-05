@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>391</title>
+</head>
+<body>
+<div id="conteiner">
+    <p>First Child</p>
+    <span>Second Child</span>
+    <p>Last Child</p>
+</div>
+
+<script>
+    let div = document.getElementById('conteiner');
+    console.log(div)
+    // Используем lastChild
+    let lastChild = div.lastChild;
+    console.log(lastChild);
+
+    // Используем lastElementChild
+    let lastElementChild = div.lastElementChild;
+    console.log(lastElementChild);
+</script>
+</body>
+</html>
