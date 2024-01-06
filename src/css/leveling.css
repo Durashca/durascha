@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* для ссылок */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* для дива */
+.container {
+    position: relative;
+    height: 90vh; /* Вы можете установить высоту контейнера по вашему выбору */
+    border: 2px solid greenyellow;
+}
+
+/* для кнопок */
+.button-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 2px solid silver;
+    background-color: #F0F0F0;
+    color: #333;
+}
+
+.button--bottom-left {
+    position: absolute;
+    left: 10px;
+}
+
+.button--bottom-right {
+    position: absolute;
+    right: 10px;
+}
+
+span {
+    position: absolute;
+    top: 50px;
+}
+
+/*.centered-div {
+    font: 25px 'Times New Roman';
+} */
