@@ -1,17 +1,42 @@
+/* Общие стили для всех устройств */
 .adapt {
-    /* Общие стили */
+    box-sizing: border-box;
+    padding: 10px;
+    /* и т.д. */
 }
 
 /* Медиа-запрос для телефона */
 @media (max-width: 767px) {
     #myElement.adapt {
-        /* Стили для телефона */
+        background-color: lightblue;
+        color: white;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 14px;
+        /* и т.д. */
     }
+    .header {
+        display: none; /* Прячем заголовок на мобильных устройствах */
+    }
+    /* и другие стили для телефона */
 }
 
 /* Медиа-запрос для компьютера */
 @media (min-width: 768px) {
     #myElement.adapt {
-        /* Стили для компьютера */
+        background-color: lightgray;
+        color: black;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 50px;
+        font-size: 18px;
+        /* и т.д. */
     }
+    .header {
+        display: block; /* Показываем заголовок на компьютерах */
+        font-size: 24px;
+        color: blue;
+        /* и другие стили для компьютера */
+    }
+    /* и другие стили для компьютера */
 }

@@ -7,7 +7,7 @@ body {
 /* для ссылок */
 a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
 
 a:hover {
@@ -19,6 +19,8 @@ a:hover {
     position: relative;
     height: 90vh; /* Вы можете установить высоту контейнера по вашему выбору */
     border: 2px solid greenyellow;
+    border-radius: 12px;
+    bottom: 5px;
 }
 
 /* для кнопок */
@@ -32,11 +34,10 @@ a:hover {
 }
 
 button {
-    padding: 5px 15px;
+    padding: 7px 15px;
     border-radius: 5px;
-    border: 2px solid silver;
-    background-color: #F0F0F0;
-    color: #333;
+    font: 16px Graphik;
+    background-color: #3F2AFF;
 }
 
 .button--bottom-left {
